@@ -111,9 +111,10 @@ nav {
 
 .hero {
     width: 100%;
-    height: 90%;
+    min-height: 90vh;
     background-color: #cde9ff;
     display: flex;
+    align-items: start;
     padding: 2rem 4rem;
     gap: 4rem;
 
@@ -122,9 +123,18 @@ nav {
 
 .heroLeft {
     width: 55%;
-    height: 100%;
+    height: 80vh;
+
 }
 
+.heroRight {
+    width: 45%;
+    height: 80vh;
+    display: flex;
+    gap: 2rem;
+
+
+}
 
 .head {
     width: 100%;
@@ -167,14 +177,23 @@ nav {
 
 .one {
     background-color: #2d7eda;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 .two {
     background-color: #e6f4ff;
+    transition: all linear .4s;
+
 }
 
 .three {
     background-color: #e6f4ff;
+    transition: all linear .4s;
+
 }
 
 .head h1 {
@@ -305,41 +324,64 @@ nav {
 
 }
 
-.heroRight {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    gap: 2rem;
-
+.heroRight .img:hover {
+    scale: 1.4;
 }
 
-.right1 {
-    width: 40%;
-    height: 100%;
-    background-image: url(./photo-1695391668587-0cfe8142d982.avif);
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
-    background-position: center;
-    background-size: cover;
+.container {
+    overflow: hidden;
 }
 
-.right2 {
-    width: 60%;
+.one:hover {
+    background-color: white;
+}
+
+.two:hover,
+.three:hover {
+    background-color: #2d7eda;
+}
+
+.one:hover .white {
+    color: #2d7eda;
+}
+
+.two:hover .blue,
+.three:hover .blue {
+    color: white;
+}
+
+.right1 img {
+    width: 100%;
     height: 100%;
-    background-image: url(./photo-1729151634761-3ecd1a2ec773.avif);
-    border-radius: 60px;
-    background-position: center;
-    background-size: cover;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    object-position: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.right2 img {
+    width: 100%;
+
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50px;
+    object-position: center;
+    object-fit: cover;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 @media (max-width: 768px) {
 
     html,
     body {
-        font-size: 30%;
+        font-size: 50%;
     }
 
     .mid,
@@ -352,13 +394,25 @@ nav {
         font-size: 3rem;
     }
 
+    .head p {
+        font-size: 1.8rem;
+    }
+
+
     .head {
-        height: 70%;
-        border-radius: 40px;
-        -webkit-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .icon {
+        top: 5px;
     }
 
     .bottom {
@@ -384,12 +438,41 @@ nav {
 
     .heroRight {
         width: 100%;
+        flex-direction: column;
+        background-color: red;
     }
 
     .btn {
-        font-size: 10px;
+        font-size: 1.8rem;
         padding: 10px 12px;
 
+    }
+
+    .head h1 {
+        font-size: 7.2rem;
+    }
+
+    .bottom {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    header,
+    .hero {
+        padding: 1rem 1.2rem;
+    }
+
+    .right1 img,
+    .right2 img {
+        width: 100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
 
 
