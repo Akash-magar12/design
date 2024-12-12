@@ -324,8 +324,13 @@ nav {
 
 }
 
-.heroRight .img:hover {
-    /* scale: 1.; */
+.img {
+    transition: all linear .4s;
+
+}
+
+.img:hover {
+    scale: 1.4
 }
 
 .container {
@@ -432,7 +437,7 @@ nav {
     }
 
     .bottom {
-        height: 30%;
+        height: 10vh;
     }
 
     .right1,
@@ -455,8 +460,10 @@ nav {
     .heroRight {
         width: 100%;
         flex-direction: column;
-        background-color: red;
+        margin-top: 42rem;
     }
+
+
 
     .btn {
         font-size: 1.8rem;
@@ -470,6 +477,7 @@ nav {
 
     .bottom {
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .box {
@@ -481,14 +489,17 @@ nav {
         padding: 1rem 1.2rem;
     }
 
-    .right1 ,
-    .right2  {
+    .container {
         width: 100%;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+    }
+
+    .right1 img,
+    .right2 img {
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
     }
 
 
